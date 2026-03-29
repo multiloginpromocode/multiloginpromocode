@@ -87,14 +87,36 @@
     .sidebar-sticky { position: sticky; top: 5rem; }
     .hidden-keyword { font-size:1px; color:transparent; }
   </style>
-  <script>
-    function copyCoupon(code, btn) {
-      navigator.clipboard.writeText(code).then(function() {
-        btn.innerText = 'Đã sao chép!';
-        setTimeout(function(){ btn.innerText = 'Click to Copy'; }, 1500);
-      });
-    }
-  </script>
+    <script>
+        // Copy code with feedback (from thamkhao.html)
+        function copyCode(codeId, feedbackId) {
+            var codeElem = document.getElementById(codeId);
+            var feedbackElem = document.getElementById(feedbackId);
+            if (!codeElem) return;
+            var code = codeElem.innerText || codeElem.textContent;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).then(function () {
+                    if (feedbackElem) {
+                        feedbackElem.textContent = 'Đã sao chép: ' + code;
+                        feedbackElem.classList.remove('hidden');
+                        setTimeout(function () {
+                            feedbackElem.classList.add('hidden');
+                        }, 1500);
+                    }
+                }).catch(function () {
+                    if (feedbackElem) {
+                        feedbackElem.textContent = 'Copy failed. Copy thủ công: ' + code;
+                        feedbackElem.classList.remove('hidden');
+                    }
+                });
+            } else {
+                if (feedbackElem) {
+                    feedbackElem.textContent = 'Clipboard không hỗ trợ. Copy thủ công: ' + code;
+                    feedbackElem.classList.remove('hidden');
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
 
@@ -115,21 +137,21 @@
         <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-yellow-400 drop-shadow">Multilogin Promo Codes 2026</h1>
         <p class="text-lg md:text-xl mb-2">Unlock <span class="text-green-400 font-bold">50% OFF</span> with exclusive codes for Antidetect Browser & Cloud Phone.</p>
         <div class="text-sm text-gray-400 mb-6">Last Updated: <span class="font-semibold">March 2026</span></div>
-        <section id="conversion-hub" class="w-full flex flex-col items-center">
-            <div class="flex flex-col md:flex-row gap-4 justify-center mb-4 w-full">
-                <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg w-full md:w-auto">
-                    <span class="text-gray-300 mb-1">Antidetect Browser</span>
-                    <span id="code-adb" class="text-2xl font-mono text-yellow-400 select-all">ADBNEW50</span>
-                    <button onclick="copyCode('code-adb','feedback-adb')" class="mt-2 px-4 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition">Copy</button>
-                    <span id="feedback-adb" class="text-green-400 text-xs mt-1 hidden">Copied!</span>
-                </div>
-                <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg w-full md:w-auto">
-                    <span class="text-gray-300 mb-1">Cloud Phone</span>
-                    <span id="code-save" class="text-2xl font-mono text-yellow-400 select-all">SAVE50</span>
-                    <button onclick="copyCode('code-save','feedback-save')" class="mt-2 px-4 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition">Copy</button>
-                    <span id="feedback-save" class="text-green-400 text-xs mt-1 hidden">Copied!</span>
-                </div>
+        <!-- Nút copy code nổi bật -->
+        <div class="flex flex-col md:flex-row gap-4 justify-center mb-4 w-full">
+            <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg w-full md:w-auto">
+                <span class="text-gray-300 mb-1">Antidetect Browser</span>
+                <span id="code-adb-hero" class="text-2xl font-mono text-yellow-400 select-all">ADBNEW50</span>
+                <button onclick="copyCode('code-adb-hero','feedback-adb-hero')" class="mt-2 px-4 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition">Copy</button>
+                <span id="feedback-adb-hero" class="text-green-400 text-xs mt-1 hidden"></span>
             </div>
+            <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg w-full md:w-auto">
+                <span class="text-gray-300 mb-1">Cloud Phone</span>
+                <span id="code-save-hero" class="text-2xl font-mono text-yellow-400 select-all">SAVE50</span>
+                <button onclick="copyCode('code-save-hero','feedback-save-hero')" class="mt-2 px-4 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition">Copy</button>
+                <span id="feedback-save-hero" class="text-green-400 text-xs mt-1 hidden"></span>
+            </div>
+        </div>
             <!-- Trust Badges Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-xl mx-auto mt-2">
                 <div class="flex flex-col items-center">
@@ -177,8 +199,9 @@
                 <h3 class="text-xl font-semibold mb-2 text-yellow-300">Antidetect Browser</h3>
                 <p class="mb-2">Best for multi-accounting, browser fingerprinting, and stealth operations.</p>
                 <div class="flex items-center gap-2">
-                    <span class="font-mono text-lg text-yellow-400">ADBNEW50</span>
-                    <button onclick="copyCode('code-adb','feedback-adb')" class="px-3 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition text-sm">Copy</button>
+                    <span id="code-adb-offer" class="font-mono text-lg text-yellow-400">ADBNEW50</span>
+                    <button onclick="copyCode('code-adb-offer','feedback-adb-offer')" class="px-3 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition text-sm">Copy</button>
+                    <span id="feedback-adb-offer" class="text-green-400 text-xs ml-2 hidden"></span>
                 </div>
                 <div class="text-xs text-gray-400 mt-1">50% OFF – New users only</div>
             </div>
@@ -186,8 +209,9 @@
                 <h3 class="text-xl font-semibold mb-2 text-yellow-300">Cloud Phone</h3>
                 <p class="mb-2">Run Android in the cloud for automation, app testing, and scaling.</p>
                 <div class="flex items-center gap-2">
-                    <span class="font-mono text-lg text-yellow-400">SAVE50</span>
-                    <button onclick="copyCode('code-save','feedback-save')" class="px-3 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition text-sm">Copy</button>
+                    <span id="code-save-offer" class="font-mono text-lg text-yellow-400">SAVE50</span>
+                    <button onclick="copyCode('code-save-offer','feedback-save-offer')" class="px-3 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition text-sm">Copy</button>
+                    <span id="feedback-save-offer" class="text-green-400 text-xs ml-2 hidden"></span>
                 </div>
                 <div class="text-xs text-gray-400 mt-1">50% OFF – All plans</div>
             </div>
