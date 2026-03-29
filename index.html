@@ -80,6 +80,56 @@
     ]
   }
   </script>
+    <!-- JSON-LD SCHEMA NÂNG CAO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://multiloginpromocode.com/"}
+                ]
+            },
+            {
+                "@type": "VideoObject",
+                "name": "Multilogin Cloud Phone Coupon Demo",
+                "description": "Cloud phone dashboard demo with Multilogin promo code offers.",
+                "thumbnailUrl": "https://multiloginpromocode.com/cloud-phone-demo-thumb.jpg",
+                "contentUrl": "https://multiloginpromocode.com/Multilogin-Coupon-ADBNEW50.webm",
+                "embedUrl": "https://multiloginpromocode.com/",
+                "uploadDate": "2026-03-21"
+            },
+            {
+                "@type": "ItemList",
+                "name": "Active Multilogin Coupon Codes",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Multilogin Antidetect Browser 50% Off - ADBNEW50"},
+                    {"@type": "ListItem", "position": 2, "name": "Multilogin Cloud Phone 50% Off - SAVE50"}
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {"@type": "Question", "name": "What is the current Multilogin promo code for Antidetect Browser?", "acceptedAnswer": {"@type": "Answer", "text": "Use ADBNEW50 at checkout for 50% off eligible Antidetect Browser purchases."}},
+                    {"@type": "Question", "name": "What is the current Multilogin promo code for Cloud Phone?", "acceptedAnswer": {"@type": "Answer", "text": "Use SAVE50 at checkout for 50% off eligible Cloud Phone purchases."}},
+                    {"@type": "Question", "name": "Can I combine both Multilogin promo codes?", "acceptedAnswer": {"@type": "Answer", "text": "No. Apply the code that matches the product you are purchasing."}},
+                    {"@type": "Question", "name": "What is Multilogin Cloud Phone?", "acceptedAnswer": {"@type": "Answer", "text": "Multilogin Cloud Phone is a cloud-hosted Android environment for mobile app account workflows without physical devices."}},
+                    {"@type": "Question", "name": "Does this page use competitor coupon codes?", "acceptedAnswer": {"@type": "Answer", "text": "No. This page only publishes verified partner codes ADBNEW50 and SAVE50."}}
+                ]
+            },
+            {
+                "@type": "HowTo",
+                "name": "How to apply Multilogin promo codes",
+                "step": [
+                    {"@type": "HowToStep", "name": "Choose product", "text": "Select Antidetect Browser or Cloud Phone based on your workflow."},
+                    {"@type": "HowToStep", "name": "Open checkout", "text": "Use the matching affiliate link to open the official checkout page."},
+                    {"@type": "HowToStep", "name": "Apply code", "text": "Enter ADBNEW50 for Browser or SAVE50 for Cloud Phone and verify 50% off."}
+                ]
+            }
+        ]
+    }
+    </script>
   <style>
     body { background: #080808; }
     .gold { color: #FFD700; }
@@ -120,10 +170,24 @@
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
 
-    <!-- Floating Promo Bar -->
-    <div class="floating-bar flex items-center justify-center py-3 px-4 text-lg font-semibold">
-        <span class="mr-2">🔥 Use <span class="text-yellow-400 font-mono">ADBNEW50</span> or <span class="text-yellow-400 font-mono">SAVE50</span> for <span class="text-green-400">50% OFF</span> – Limited Time!</span>
-    </div>
+        <!-- Floating Promo Bar (scripted) -->
+        <script>
+            (function () {
+                var bar = document.createElement("div");
+                bar.style.position = "fixed";
+                bar.style.bottom = "12px";
+                bar.style.left = "12px";
+                bar.style.right = "12px";
+                bar.style.zIndex = "1000";
+                bar.style.background = "#0b74da";
+                bar.style.color = "#fff";
+                bar.style.padding = "10px 12px";
+                bar.style.borderRadius = "10px";
+                bar.style.boxShadow = "0 8px 24px rgba(0,0,0,0.15)";
+                bar.innerHTML = 'Use <strong>ADBNEW50</strong> or <strong>SAVE50</strong> for 50% off. <a href="#offers" style="color:#fff;text-decoration:underline;">See offers</a>';
+                document.body.appendChild(bar);
+            })();
+        </script>
 
     <!-- Hero Section -->
     <section class="pt-12 pb-8 px-4 md:px-0 max-w-3xl mx-auto text-center">
@@ -228,29 +292,28 @@
         <div class="overflow-x-auto">
             <table class="min-w-full bg-gray-800 rounded-lg shadow text-sm md:text-base">
                 <thead>
-                    <tr class="bg-gray-700 text-yellow-300">
-                        <th class="py-2 px-3">Product</th>
-                        <th class="py-2 px-3">Best For</th>
-                        <th class="py-2 px-3">Core Value</th>
-                        <th class="py-2 px-3">Promo Code</th>
-                        <th class="py-2 px-3">Discount</th>
-                    </tr>
+                        <tr class="bg-gray-700 text-yellow-300">
+                            <th class="py-2 px-3">Product</th>
+                            <th class="py-2 px-3">Best For</th>
+                            <th class="py-2 px-3">Core Value</th>
+                            <th class="py-2 px-3">Code</th>
+                            <th class="py-2 px-3">Discount</th>
+                        </tr>
                 </thead>
                 <tbody>
-                    <tr class="border-b border-gray-700">
-                        <td class="py-2 px-3">Antidetect Browser</td>
-                        <td class="py-2 px-3">Multi-accounting, Stealth</td>
-                        <td class="py-2 px-3">Browser Fingerprinting</td>
-                        <td class="py-2 px-3 font-mono text-yellow-400">ADBNEW50</td>
-                        <td class="py-2 px-3 text-green-400 font-bold">50% OFF</td>
-                    </tr>
-                    <tr>
-                        <td class="py-2 px-3">Cloud Phone</td>
-                        <td class="py-2 px-3">Automation, App Testing</td>
-                        <td class="py-2 px-3">Cloud Android Devices</td>
-                        <td class="py-2 px-3 font-mono text-yellow-400">SAVE50</td>
-                        <td class="py-2 px-3 text-green-400 font-bold">50% OFF</td>
-                    </tr>
+                        <tr class="border-t border-gray-700">
+                            <td class="py-2 px-3">Antidetect Browser</td>
+                            <td class="py-2 px-3">Web account management</td>
+                            <td class="py-2 px-3">Profile-level fingerprint isolation in browser workflows</td>
+                            <td class="py-2 px-3 font-mono text-yellow-400">ADBNEW50</td>
+                            <td class="py-2 px-3 text-green-400 font-bold">50% off</td>
+                        </tr>
+                        <tr class="border-t border-gray-700">
+                            <td class="py-2 px-3">Cloud Phone</td>
+                            <td class="py-2 px-3">Mobile app operations</td>
+                            <td class="py-2 px-3">Real Android cloud devices for scalable mobile sessions</td>
+                            <td class="py-2 px-3 font-mono text-yellow-400">SAVE50</td>
+                            <td class="py-2 px-3 text-green-400 font-bold">50% off</td>
                 </tbody>
             </table>
         </div>
@@ -299,6 +362,29 @@
             </div>
         </div>
     </section>
+        <section id="setup" class="max-w-3xl mx-auto mb-12 px-4">
+            <h2 class="text-2xl font-bold mb-4 text-green-400">📝 How to Claim the 50% Discount</h2>
+            <ol class="list-decimal list-inside space-y-2 bg-gray-800 rounded-lg p-6 shadow mb-4">
+                <li>Copy your preferred code: <span class="font-mono text-yellow-400">ADBNEW50</span> (Browser) hoặc <span class="font-mono text-yellow-400">SAVE50</span> (Cloud Phone).</li>
+                <li>Open the official pricing/offer page qua nút ưu đãi ở trên.</li>
+                <li>Create your account và đi đến trang thanh toán.</li>
+                <li>Paste mã vào ô <b>Promo Code</b>.</li>
+                <li>Click <b>Apply</b> để kích hoạt giảm giá 50%. <span class="text-green-400">Nếu mã hợp lệ sẽ hiện dấu tích xanh và dòng "Promo code applied".</span></li>
+            </ol>
+            <div class="mt-4 flex flex-col md:flex-row gap-6 items-center justify-center">
+                <div class="flex-1 flex flex-col items-center">
+                    <img src="./checkout-promo-applied.png" alt="Promo code applied - Multilogin checkout" class="rounded-lg shadow border border-gray-700 max-w-full md:max-w-xs mb-2">
+                    <div class="text-xs text-gray-400 text-center">Sau khi nhập mã <span class="font-mono text-yellow-400">ADBNEW50</span> và bấm <b>Apply</b>, bạn sẽ thấy dấu tích xanh <span class="text-green-400">✔</span> và dòng <span class="text-green-400">Promo code applied</span>. Hãy để ý mục <b>Promo code</b> sẽ trừ <span class="text-green-400">-50%</span> vào tổng giá sản phẩm.</div>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <video controls poster="https://multiloginpromocode.com/cloud-phone-demo-thumb.jpg" class="rounded-lg w-full max-w-md mx-auto shadow">
+                        <source src="./Multilogin-Coupon-ADBNEW50.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="text-xs text-gray-400 mt-2 text-center">Cloud Phone Promo Code Demo</div>
+                </div>
+            </div>
+        </section>
 
     <!-- FAQ Section -->
     <section id="faq" class="max-w-3xl mx-auto mb-12 px-4">
@@ -345,6 +431,85 @@
     </section>
 
     <!-- Risk Management & Mistakes -->
+        <!-- Platform-Level Advantages -->
+            <!-- Pricing Logic: Monthly vs Annual Decision Framework -->
+                <!-- Alternatives Section -->
+                <section class="max-w-4xl mx-auto mb-12 px-4">
+                    <h2 class="text-2xl font-bold mb-4 text-yellow-300">🔄 Multilogin Alternatives: How to Compare Properly</h2>
+                    <p class="mb-4">When comparing Multilogin against other antidetect or cloud phone tools, focus on operational stability, identity consistency, and team workflow quality instead of price alone. Lower sticker price can become expensive when sessions fail and teams spend hours on troubleshooting.</p>
+                    <table class="min-w-full bg-gray-800 rounded-lg shadow text-sm md:text-base mb-6">
+                        <thead>
+                            <tr class="bg-gray-700 text-yellow-300">
+                                <th class="py-2 px-3 font-semibold">Comparison Factor</th>
+                                <th class="py-2 px-3 font-semibold">What to Validate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-gray-700">
+                                <td class="py-2 px-3">Session stability</td>
+                                <td class="py-2 px-3">How often profiles fail, require resets, or trigger verification loops.</td>
+                            </tr>
+                            <tr class="border-t border-gray-700">
+                                <td class="py-2 px-3">Mobile + web stack</td>
+                                <td class="py-2 px-3">Whether cloud phone and browser workflows can run together without tool sprawl.</td>
+                            </tr>
+                            <tr class="border-t border-gray-700">
+                                <td class="py-2 px-3">Team operations</td>
+                                <td class="py-2 px-3">Access control, handoff quality, and operational visibility for multiple operators.</td>
+                            </tr>
+                            <tr class="border-t border-gray-700">
+                                <td class="py-2 px-3">Scale readiness</td>
+                                <td class="py-2 px-3">Ability to expand workflow volume without unstable behavior.</td>
+                            </tr>
+                            <tr class="border-t border-gray-700">
+                                <td class="py-2 px-3">Support quality</td>
+                                <td class="py-2 px-3">Response speed and troubleshooting depth for real production issues.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            <section class="max-w-3xl mx-auto mb-12 px-4">
+                <h2 class="text-2xl font-bold mb-4 text-yellow-400">💸 Pricing Logic: Monthly vs Annual</h2>
+                <p class="mb-2">If your operation is still testing acquisition channels, start monthly and measure account stability, team throughput, and maintenance cost. If your workflows are already stable and predictable, annual billing usually improves total operating efficiency.</p>
+                <p class="mb-2">Treat coupon savings as entry leverage, then optimize by process quality and retention horizon. The best long-term ROI comes from fewer failed sessions, better team consistency, and cleaner operations.</p>
+            </section>
+        <section class="max-w-4xl mx-auto mb-12 px-4">
+            <h2 class="text-2xl font-bold mb-4 text-blue-400">🌐 Platform-Level Advantages</h2>
+            <table class="min-w-full bg-gray-800 rounded-lg shadow text-sm md:text-base mb-6">
+                <thead>
+                    <tr class="bg-gray-700 text-blue-300">
+                        <th class="py-2 px-3 font-semibold">Capability</th>
+                        <th class="py-2 px-3 font-semibold">Why It Matters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t border-gray-700">
+                        <td class="py-2 px-3">Profile isolation</td>
+                        <td class="py-2 px-3">Reduces cross-account linkage in long-running workflows.</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="py-2 px-3">Geo targeting</td>
+                        <td class="py-2 px-3">Supports location-sensitive operations across many regions.</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="py-2 px-3">Cloud Phone + Browser</td>
+                        <td class="py-2 px-3">Combines mobile and web operations under one operational stack.</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="py-2 px-3">Team collaboration</td>
+                        <td class="py-2 px-3">Improves handoff quality and workflow continuity for agencies.</td>
+                    </tr>
+                    <tr class="border-t border-gray-700">
+                        <td class="py-2 px-3">Automation compatibility</td>
+                        <td class="py-2 px-3">Supports repeatable execution for large-scale routine actions.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="text-lg font-semibold mb-2 text-blue-300">Entity Coverage for Search Relevance</h3>
+            <p class="text-gray-200 mb-2">
+                This page covers major topic entities and intents around Multilogin: multi-account browser, cloud phone, Android cloud device, account isolation, anti-detect workflows, social media operations, web automation, e-commerce account management, and team collaboration infrastructure.
+            </p>
+        </section>
     <section id="risk" class="max-w-3xl mx-auto mb-16 px-4">
         <h2 class="text-2xl font-bold mb-4 text-red-400">⚠️ Risk Management & Common Mistakes</h2>
         <ul class="list-disc list-inside space-y-2 bg-gray-800 rounded-lg p-6 shadow">
