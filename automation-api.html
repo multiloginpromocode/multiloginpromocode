@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi" itemscope itemtype="https://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilogin X API Automation Guide | Playwright & Python Scripts</title>
+  <meta name="description" content="Hướng dẫn tự động hóa Multilogin X với API, Playwright, Python. Code mẫu thực chiến, tối ưu cho affiliate, marketing, quản lý tài khoản.">
+  <meta name="keywords" content="Multilogin API, Playwright, Python, Automation, Script, Multilogin X, Affiliate, Marketing, Code Example, Official Partner">
+  <meta name="author" content="Senior Automation Engineer K.">
+  <link rel="canonical" href="https://multiloginpromocode.com/automation-api.html">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <meta name="theme-color" content="#080808">
+  <meta name="robots" content="index, follow">
+  <link rel="author" href="/humans.txt">
+  <!-- JSON-LD SCHEMA -->
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Multilogin X API Automation Guide",
+    "author": {"@type": "Person", "name": "Senior Automation Engineer K."},
+    "about": "Multilogin X API, Playwright, Python, Automation",
+    "datePublished": "2026-03-29",
+    "publisher": {"@type": "Organization", "name": "multiloginpromocode.com"}
+  }</script>
+  <style>body{background:#080808;}</style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
+  <header class="w-full bg-gray-950 shadow z-30 sticky top-0">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="/index.html" class="flex items-center space-x-2">
+        <img src="/assets/logo.svg" alt="MULTILOGIN-PROMO" class="h-8 w-8">
+        <span class="font-bold text-xl gold tracking-tight">MULTILOGIN-PROMO</span>
+      </a>
+      <nav class="space-x-4 hidden md:block">
+        <a href="/index.html" class="hover:underline gold">Home</a>
+        <a href="/multilogin-x.html" class="hover:underline">Browser</a>
+        <a href="/cloud-phone.html" class="hover:underline">Cloud Phone</a>
+        <a href="/automation-api.html" class="hover:underline font-bold underline">API Guide</a>
+        <a href="/comparison.html" class="hover:underline">Compare</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-1 max-w-3xl mx-auto w-full px-4 py-8">
+    <h1 class="text-3xl md:text-4xl font-extrabold mb-4 gold">Multilogin X API Automation Guide</h1>
+    <p class="mb-6 text-lg text-gray-200">Tự động hóa Multilogin X với API, Playwright, Python. Code mẫu thực chiến cho affiliate, marketing, quản lý tài khoản đa nền tảng.</p>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2 gold">1. Python: Khởi tạo profile Multilogin X qua API</h2>
+      <pre class="bg-gray-800 rounded p-4 text-sm overflow-x-auto"><code class="text-green-400">import requests
+
+API_TOKEN = 'YOUR_API_TOKEN'
+API_URL = 'https://api.multilogin.com/v2/profile'
+
+headers = {'Authorization': f'Bearer {API_TOKEN}'}
+data = {
+    "name": "AffiliateProfile",
+    "browserType": "mimic",
+    "os": "win",
+    "notes": "Created via API"
+}
+resp = requests.post(API_URL, headers=headers, json=data)
+print(resp.json())</code></pre>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2 gold">2. Playwright: Mở profile Multilogin X</h2>
+      <pre class="bg-gray-800 rounded p-4 text-sm overflow-x-auto"><code class="text-blue-400">from playwright.sync_api import sync_playwright
+import requests
+
+API_TOKEN = 'YOUR_API_TOKEN'
+PROFILE_ID = 'YOUR_PROFILE_ID'
+API_URL = f'https://api.multilogin.com/v2/profile/{PROFILE_ID}/start'
+
+headers = {'Authorization': f'Bearer {API_TOKEN}'}
+resp = requests.post(API_URL, headers=headers)
+ws_url = resp.json()['value']
+
+with sync_playwright() as p:
+    browser = p.chromium.connect_over_cdp(ws_url)
+    page = browser.new_page()
+    page.goto('https://whoer.net/')
+    print(page.title())
+    browser.close()</code></pre>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2 gold">3. Tích hợp API vào hệ thống affiliate/marketing</h2>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>Tự động tạo, quản lý, đồng bộ profile cho chiến dịch quảng cáo.</li>
+        <li>Kết nối API với CRM, tool automation, cloud phone, proxy.</li>
+        <li>Giám sát, báo cáo hiệu quả qua webhook.</li>
+      </ul>
+    </section>
+    <nav class="mt-8 flex flex-wrap gap-4 text-sm">
+      <a href="/index.html" class="underline gold">Home</a>
+      <a href="/multilogin-x.html" class="underline gold">Multilogin X</a>
+      <a href="/cloud-phone.html" class="underline gold">Cloud Phone</a>
+      <a href="/comparison.html" class="underline gold">Compare</a>
+      <a href="/privacy.html" class="underline gold">Privacy</a>
+    </nav>
+    <div class="hidden" aria-hidden="true">
+      <p>Multilogin X API, Playwright, Python, Automation, Affiliate, Marketing, Official Partner, Engineer K.</p>
+    </div>
+  </main>
+  <footer class="w-full bg-gray-950 border-t border-gray-800 mt-8">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <h4 class="font-semibold mb-2 gold">About</h4>
+        <p>multiloginpromocode.com là đối tác chính thức Multilogin, chia sẻ mã giảm giá, hướng dẫn, so sánh, API, Cloud Phone, Automation.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 gold">Sitemap</h4>
+        <ul class="space-y-1">
+          <li><a href="/index.html" class="hover:underline">Home</a></li>
+          <li><a href="/multilogin-x.html" class="hover:underline">Browser</a></li>
+          <li><a href="/cloud-phone.html" class="hover:underline">Cloud Phone</a></li>
+          <li><a href="/automation-api.html" class="hover:underline font-bold underline">API Guide</a></li>
+          <li><a href="/comparison.html" class="hover:underline">Compare</a></li>
+          <li><a href="/privacy.html" class="hover:underline">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 gold">Support</h4>
+        <ul class="space-y-1">
+          <li>Email: <a href="mailto:support@multiloginpromocode.com" class="underline">support@multiloginpromocode.com</a></li>
+          <li>Hoàn tiền 30 ngày</li>
+          <li>Hỗ trợ 24/7</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 gold">Connect</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Facebook</a></li>
+          <li><a href="#" class="hover:underline">Telegram</a></li>
+          <li><a href="#" class="hover:underline">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-500 py-2 border-t border-gray-800">
+      © 2026 multiloginpromocode.com. All rights reserved.<br>
+      <span class="text-red-600 font-semibold">Disclosure:</span> Chúng tôi có thể nhận hoa hồng khi bạn đăng ký qua liên kết/nhận mã giảm giá trên website này.
+    </div>
+    <div aria-hidden="true" class="hidden-keyword">
+      Multilogin X API, Playwright, Python, Automation, Affiliate, Engineer K.
+    </div>
+  </footer>
+</body>
+</html>
