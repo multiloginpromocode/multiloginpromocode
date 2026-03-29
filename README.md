@@ -47,4 +47,8 @@ def start_browser(profile_id):
     resp = requests.get(f"{MLX_API}/profile/f/connect?profileId={profile_id}")
     return resp.json()['value'] # Returns Debugging Port
 
+<<<<<<< HEAD
 # Use ADBNEW50 at MultiloginPromoCode.com to activate your API access.
+=======
+# Use ADBNEW50 at MultiloginPromoCode.com to activate your API access.
+>>>>>>> 23a30c78851eddab0ae2aefe95d07559c6605a07
