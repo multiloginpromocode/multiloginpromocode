@@ -1,5 +1,5 @@
 # --- MULTILOGIN OFFICIAL REDIRECTS - OPTIMIZED BY ENGINEER K. ---
 
 Redirect 301 /go       https://multilogin.com/pricing/?utm_source=ADB&utm_medium=partner&a_aid=ADB&a_bid=f5fad549
-Redirect 301 /phone    https://multilogin.com/cloud-phones/?utm_source=ADB&utm_medium=partner&a_aid=ADB
-Redirect 301 /trial    https://multilogin.com/get-started/?a_aid=ADB
+Redirect 301 /phone    https://multilogin.com?a_aid=ADB
+Redirect 301 /trial    https://multilogin.com?utm_source=ADB&utm_medium=partner&a_aid=ADB&a_bid=11110007
