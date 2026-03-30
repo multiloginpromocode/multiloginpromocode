@@ -1,7 +1,7 @@
 # 🛡️ Multilogin X Automation Hub | Official 2026 Verified Partner
 
 <div align="center">
-  <img src="./images/og-image.jpg" width="100%" alt="Engineer K Multilogin X Official Partner 2026 Verified Lifetime Discount">
+  <img src="./og-image.jpg" width="100%" alt="Engineer K Multilogin X Official Partner 2026 Verified Lifetime Discount">
   
   <p align="center">
     <a href="https://multiloginpromocode.com">
@@ -46,7 +46,7 @@ Through **ADBLogin**, we provide the bridge between elite antidetect technology 
 Manage your entire operation from a single dashboard. This video showcases the seamless integration between **Multilogin X Antidetect Profiles** and **Real Android Cloud Phone** hardware.
 
 <div align="center">
-  <video src="./images/multilogin-x-antidetect-browser-cloud-phone-interface-demo.mp4" width="100%" controls title="Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase">
+  <video src="./assets/videos/multilogin-x-antidetect-browser-cloud-phone-interface-demo.mp4" width="100%" controls title="Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase">
     Your browser does not support the video tag.
   </video>
   <p><em>Unified Interface: Browser + Cloud Phone Management by Engineer K.</em></p>
@@ -58,7 +58,7 @@ Manage your entire operation from a single dashboard. This video showcases the s
 Evidence of authenticity. Below is a verified checkout sequence showing the application of the `ADBNEW50` code, securing an instant and permanent **50% Lifetime Recurring Discount**.
 
 <div align="center">
-  <img src="./images/multilogin-x-promo-code-adbnew50-50-percent-discount.png" width="100%" alt="Verified Multilogin Promo Code ADBNEW50 Applied - 50% OFF Lifetime Discount Secured">
+  <img src="./assets/images/multilogin-x-promo-code-adbnew50-50-percent-discount.png" width="100%" alt="Verified Multilogin Promo Code ADBNEW50 Applied - 50% OFF Lifetime Discount Secured">
   <p><em>Checkout Proof: Code ADBNEW50 applied successfully for 50% permanent savings.</em></p>
 </div>
 
@@ -68,7 +68,7 @@ Evidence of authenticity. Below is a verified checkout sequence showing the appl
 Follow this step-by-step technical guide by Engineer K to select the correct plan, apply your verified partner code, and activate your high-scale stealth infrastructure.
 
 <div align="center">
-  <video src="./images/multilogin-x-coupon-code-adbnew50-tutorial.mp4" width="100%" controls title="Step-by-step guide to applying Multilogin Promo Code ADBNEW50 by Engineer K">
+  <video src="./assets/images/multilogin-x-coupon-code-adbnew50-tutorial.mp4" width="100%" controls title="Step-by-step guide to applying Multilogin Promo Code ADBNEW50 by Engineer K">
     Your browser does not support the video tag.
   </video>
   <p><em>Video Tutorial: Official Redemption Process for Code ADBNEW50.</em></p>
