@@ -201,17 +201,57 @@
             <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg w-full md:w-auto">
                 <span class="text-gray-300 mb-1">Antidetect Browser</span>
                 <span id="code-adb-hero" class="text-2xl font-mono text-yellow-400 select-all">ADBNEW50</span>
-                <button onclick="copyCode('code-adb-hero','feedback-adb-hero')" class="mt-2 px-4 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition">Copy</button>
+                <button onclick="copyAndGo('ADBNEW50','https://multiloginpromocode.com/go','feedback-adb-hero')" class="mt-2 px-4 py-1 bg-green-500 hover:bg-green-400 text-white rounded transition font-semibold shadow">Copy & Go</button>
                 <span id="feedback-adb-hero" class="text-green-400 text-xs mt-1 hidden"></span>
-                <a href="https://multiloginpromocode.com/go" target="_blank" rel="noopener sponsored" class="mt-2 px-4 py-1 bg-green-500 hover:bg-green-400 text-white rounded transition font-semibold shadow">Get Browser Offer</a>
             </div>
             <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center shadow-lg w-full md:w-auto">
                 <span class="text-gray-300 mb-1">Cloud Phone</span>
                 <span id="code-save-hero" class="text-2xl font-mono text-yellow-400 select-all">SAVE50</span>
-                <button onclick="copyCode('code-save-hero','feedback-save-hero')" class="mt-2 px-4 py-1 bg-yellow-500 hover:bg-yellow-400 text-gray-900 rounded transition">Copy</button>
+                <button onclick="copyAndGo('SAVE50','https://multiloginpromocode.com/go','feedback-save-hero')" class="mt-2 px-4 py-1 bg-green-500 hover:bg-green-400 text-white rounded transition font-semibold shadow">Copy & Go</button>
                 <span id="feedback-save-hero" class="text-green-400 text-xs mt-1 hidden"></span>
-                <a href="https://multiloginpromocode.com/go" target="_blank" rel="noopener sponsored" class="mt-2 px-4 py-1 bg-green-500 hover:bg-green-400 text-white rounded transition font-semibold shadow">Get Cloud Phone Offer</a>
             </div>
+            <script>
+            // Copy code and open offer page
+            function copyAndGo(code, url, feedbackId) {
+                if (navigator && navigator.clipboard) {
+                    navigator.clipboard.writeText(code).then(function() {
+                        showFeedback(feedbackId, 'Copied! Redirecting...');
+                        setTimeout(function() {
+                            window.open(url, '_blank');
+                        }, 400);
+                    }, function() {
+                        showFeedback(feedbackId, 'Copy failed!');
+                        window.open(url, '_blank');
+                    });
+                } else {
+                    // Fallback for old browsers
+                    var temp = document.createElement('textarea');
+                    temp.value = code;
+                    document.body.appendChild(temp);
+                    temp.select();
+                    try {
+                        document.execCommand('copy');
+                        showFeedback(feedbackId, 'Copied! Redirecting...');
+                    } catch (e) {
+                        showFeedback(feedbackId, 'Copy failed!');
+                    }
+                    document.body.removeChild(temp);
+                    setTimeout(function() {
+                        window.open(url, '_blank');
+                    }, 400);
+                }
+            }
+            function showFeedback(id, msg) {
+                var el = document.getElementById(id);
+                if (el) {
+                    el.textContent = msg;
+                    el.classList.remove('hidden');
+                    setTimeout(function() {
+                        el.classList.add('hidden');
+                    }, 1800);
+                }
+            }
+            </script>
         </div>
             <!-- Trust Badges Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-xl mx-auto mt-2">
