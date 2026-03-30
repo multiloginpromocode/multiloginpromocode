@@ -46,7 +46,7 @@ Through **ADBLogin**, we provide the bridge between elite antidetect technology 
 Manage your entire operation from a single dashboard. This video showcases the seamless integration between **Multilogin X Antidetect Profiles** and **Real Android Cloud Phone** hardware.
 
 <div align="center">
-  <video src="https://github.com/multiloginpromocode/multiloginpromocode/tree/main/assets/videos/multilogin-x-antidetect-browser-cloud-phone-interface-demo.mp4" width="100%" controls title="Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase">
+  <video src="https://raw.githubusercontent.com/multiloginpromocode/multiloginpromocode/main/assets/videos/multilogin-x-antidetect-browser-cloud-phone-interface-demo.mp4" width="100%" controls title="Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase">
     Your browser does not support the video tag.
   </video>
   <p><em>Unified Interface: Browser + Cloud Phone Management by Engineer K.</em></p>
