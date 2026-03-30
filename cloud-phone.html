@@ -94,16 +94,18 @@
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-2 gold">Supported Platforms</h2>
       <div class="flex flex-wrap justify-center items-center gap-4 bg-gray-800 rounded-lg p-4">
-        <img src="/assets/brand/facebook_logo.avif" alt="Facebook" class="h-8">
-        <img src="/assets/brand/tiktok.png" alt="TikTok" class="h-8">
-        <img src="/assets/brand/instagram.png" alt="Instagram" class="h-8">
-        <img src="/assets/brand/google.png" alt="Google" class="h-8">
-        <img src="/assets/brand/reddit.png" alt="Reddit" class="h-8">
-        <img src="/assets/brand/linkedin.png" alt="LinkedIn" class="h-8">
-        <img src="/assets/brand/youtube.png" alt="YouTube" class="h-8">
-        <img src="/assets/brand/telegram.png" alt="Telegram" class="h-8">
-        <img src="/assets/brand/shopify.png" alt="Shopify" class="h-8">
-        <img src="/assets/brand/amazon.png" alt="Amazon" class="h-8">
+          <img src="/assets/brand/facebook_logo.avif" alt="Facebook" class="h-8">
+          <img src="/assets/brand/tiktok-icon.webp" alt="TikTok" class="h-8">
+          <img src="/assets/brand/instagram.png" alt="Instagram" class="h-8">
+          <img src="/assets/brand/google-icon.webp" alt="Google" class="h-8">
+          <img src="/assets/brand/reddit-icon.webp" alt="Reddit" class="h-8">
+          <img src="/assets/brand/Linkedin-icon.webp" alt="LinkedIn" class="h-8">
+          <img src="/assets/brand/shopify-icon.webp" alt="Shopify" class="h-8">
+          <img src="/assets/brand/amazon-icon.webp" alt="Amazon" class="h-8">
+          <img src="/assets/brand/binance-icon.webp" alt="Binance" class="h-8">
+          <img src="/assets/brand/aliexpress-icon.webp" alt="AliExpress" class="h-8">
+          <img src="/assets/brand/airbnb-icon.webp" alt="Airbnb" class="h-8">
+          <img src="/assets/brand/shopee-icon.webp" alt="Shopee" class="h-8">
       </div>
     </section>
 
@@ -141,14 +143,51 @@
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-2 gold">Trusted & Highly Rated</h2>
       <div class="flex flex-wrap justify-center items-center gap-4 bg-gray-800 rounded-lg p-4 mb-2">
-        <img src="/assets/badge/g2.webp" alt="G2" class="trust-badge">
-        <img src="/assets/badge/kinza.webp" alt="Kinza" class="trust-badge">
-        <img src="/assets/badge/conversionclub.webp" alt="Conversion Club" class="trust-badge">
-        <img src="/assets/badge/startup.webp" alt="Startup" class="trust-badge">
-        <img src="/assets/badge/sourceforge.webp" alt="SourceForge" class="trust-badge">
-        <img src="/assets/badge/getapp.webp" alt="GetApp" class="trust-badge">
+          <img src="/assets/badge/Browser_BestSupport_QualityOfSupport.png" alt="Best Support" class="trust-badge">
+          <img src="/assets/badge/Browser_MomentumLeader_Leader.png" alt="Momentum Leader" class="trust-badge">
+          <img src="/assets/badge/Browser_HighPerformer_HighPerformer.png" alt="High Performer" class="trust-badge">
+          <img src="/assets/badge/compliant_logo.png" alt="Compliant" class="trust-badge">
       </div>
       <div class="text-xs text-gray-400 text-center">Recognized by top global software review platforms.</div>
+    </section>
+    <!-- DEMO VIDEO SECTION -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2 gold">See Cloud Phone in Action</h2>
+      <div class="bg-gray-800 rounded-lg p-4 flex flex-col items-center">
+        <video src="/assets/videos/multilogin-x-antidetect-browser-cloud-phone-interface-demo.mp4" controls poster="/assets/og-main.jpg" class="w-full max-w-2xl rounded mb-2"></video>
+        <div class="text-xs text-gray-400">Unified Interface: Browser + Cloud Phone Management</div>
+      </div>
+    </section>
+    <!-- HOW TO CLAIM DISCOUNT SECTION -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2 gold">How to Claim Your 50% OFF</h2>
+      <ol class="list-decimal pl-6 text-gray-300 mb-4">
+        <li>Go to <a href="https://multilogin.com/pricing/" class="underline gold" target="_blank">Multilogin Pricing</a>.</li>
+        <li>Select your Cloud Phone plan.</li>
+        <li>Enter the promo code <span class="font-mono gold">SAVE50</span> at checkout.</li>
+        <li>Enjoy 50% OFF on all Cloud Phone minutes!</li>
+      </ol>
+      <img src="/assets/images/multilogin-x-promo-code-adbnew50-50-percent-discount.png" alt="Promo Code Proof" class="rounded shadow max-w-md mx-auto">
+      <div class="text-xs text-gray-400 text-center mt-2">Verified checkout: 50% OFF code applied successfully.</div>
+    </section>
+    <!-- AUTOMATION READY SECTION -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-2 gold">Automation Ready: API & Scripting</h2>
+      <p class="text-gray-300 mb-2">Integrate Cloud Phone with your automation stack using the official Multilogin X API. Perfect for Python, Playwright, and professional SMM teams.</p>
+      <pre class="bg-gray-900 text-xs text-green-400 rounded p-4 overflow-x-auto mb-2"><code>import requests
+from playwright.sync_api import sync_playwright
+
+# Official Multilogin X Local API (Default Port: 35000)
+MLX_API = "http://localhost:35000/api/v1"
+
+def start_mlx_profile(profile_id):
+    """Starts a profile and returns the debugging port for Playwright/Selenium"""
+    endpoint = f"{MLX_API}/profile/f/connect?profileId={profile_id}"
+    response = requests.get(endpoint)
+    # Returns the automation debugging port
+    return response.json().get('value')
+</code></pre>
+      <div class="text-xs text-gray-400">Use code <span class="font-mono gold">SAVE50</span> to unlock API automation features.</div>
     </section>
 
     <!-- EDUCATIONAL CONTENT & FAQ -->
