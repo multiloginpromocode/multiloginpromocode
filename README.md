@@ -46,7 +46,7 @@ Through **ADBLogin**, we provide the bridge between elite antidetect technology 
 Manage your entire operation from a single dashboard. This video showcases the seamless integration between **Multilogin X Antidetect Profiles** and **Real Android Cloud Phone** hardware.
 
 <div align="center">
-  <video src="./assets/videos/multilogin-x-antidetect-browser-cloud-phone-interface-demo.mp4" width="100%" controls title="Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase">
+  <video src="https://github.com/multiloginpromocode/multiloginpromocode/tree/main/assets/videos/multilogin-x-antidetect-browser-cloud-phone-interface-demo.mp4" width="100%" controls title="Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase">
     Your browser does not support the video tag.
   </video>
   <p><em>Unified Interface: Browser + Cloud Phone Management by Engineer K.</em></p>
@@ -68,7 +68,7 @@ Evidence of authenticity. Below is a verified checkout sequence showing the appl
 Follow this step-by-step technical guide by Engineer K to select the correct plan, apply your verified partner code, and activate your high-scale stealth infrastructure.
 
 <div align="center">
-  <video src="./assets/videos/multilogin-x-coupon-code-adbnew50-tutorial.mp4" width="100%" controls title="Step-by-step guide to applying Multilogin Promo Code ADBNEW50 by Engineer K">
+  <video src="https://github.com/multiloginpromocode/multiloginpromocode/tree/main/assets/videos/multilogin-x-coupon-code-adbnew50-tutorial.mp4" width="100%" controls title="Step-by-step guide to applying Multilogin Promo Code ADBNEW50 by Engineer K">
     Your browser does not support the video tag.
   </video>
   <p><em>Video Tutorial: Official Redemption Process for Code ADBNEW50.</em></p>
