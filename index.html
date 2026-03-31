@@ -1,4 +1,11 @@
 <head>
+        <style>
+            /* Hiện màu nền đen ngay lập tức để không bị trắng xóa lúc đầu */
+            html, body { background-color: #080808 !important; color: #ffffff; margin: 0; padding: 0; }
+            /* Giữ khung cho Hero Section không bị nhảy */
+            .max-w-4xl { margin-left: auto; margin-right: auto; max-width: 56rem; }
+            section { display: block; min-height: 200px; }
+        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Preconnect for performance optimization -->
@@ -36,7 +43,8 @@
     <meta name="twitter:image" content="https://multiloginpromocode.com/og-image.jpg">
 
     <link rel="author" href="/humans.txt">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 
 
 <script type="application/ld+json">
@@ -405,12 +413,12 @@
         </section>
         <!-- Main Image moved here (was video) -->
         <div class="mb-6 flex flex-col items-center">
-            <picture>
+            <picture style="display: block; min-height: 300px;">
                 <source srcset="https://multiloginpromocode.com/assets/images/mobile-version.webp" media="(max-width: 768px)">
                 <img src="https://multiloginpromocode.com/assets/images/real-android-hardware-cloud-phone-multilogin.webp" 
                      alt="Real Android Hardware Cloud Phone Multilogin" 
-                     class="rounded-xl shadow border border-gray-700 w-full max-w-4xl mx-auto"
-                     fetchpriority="high" 
+                     class="rounded-xl shadow border border-gray-700 w-full"
+                     fetchpriority="high"
                      width="1000" height="562">
             </picture>
             <div class="text-xs text-gray-400 mt-2 text-center">Verified 50% OFF with Promo Code ADBNEW50.</div>
