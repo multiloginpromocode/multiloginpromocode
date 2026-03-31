@@ -224,6 +224,58 @@
         .sidebar-sticky { position: sticky; top: 5rem; }
         /* White Hat SEO Badge */
         .authority-badge { border: 1px solid #FFD700; padding: 2px 8px; border-radius: 4px; font-weight: bold; }
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .youtube-lite {
+            background-color: #000;
+            position: relative;
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            cursor: pointer;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .youtube-lite img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .youtube-lite:hover img {
+            opacity: 1;
+        }
+        /* Nút Play giả lập */
+        .play-btn {
+            width: 68px;
+            height: 48px;
+            background-color: rgba(255, 0, 0, 0.9);
+            border-radius: 12%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s;
+        }
+        .youtube-lite:hover .play-btn {
+            background-color: #ff0000;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .play-btn::before {
+            content: "";
+            border-style: solid;
+            border-width: 10px 0 10px 20px;
+            border-color: transparent transparent transparent #fff;
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 
     <script>
@@ -473,12 +525,15 @@
 
     <!-- FAQ Section -->
         <!-- Video Tutorial: Multilogin X Coupon Code ADBNEW50 -->
-        <div class="max-w-4xl mx-auto mb-8 px-4 flex flex-col items-center">
-            <div class="w-full max-w-4xl rounded-xl overflow-hidden shadow-lg border border-gray-800 bg-black relative" style="padding-top: 56.25%;">
-                <iframe src="https://www.youtube.com/embed/FAUQV7l0jXM" title="How to Apply Multilogin X Coupon Code ADBNEW50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
-            </div>
-            <div class="text-xs text-gray-400 mt-2 text-center">Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase by Engineer K. Verified 50% OFF with Promo Code ADBNEW50.</div>
-        </div>
+                <div class="max-w-4xl mx-auto mb-8 px-4 flex flex-col items-center">
+                    <div class="video-container">
+                        <div class="youtube-lite" onclick="this.innerHTML='<iframe width=100% height=100% src=https://www.youtube.com/embed/FAUQV7l0jXM?autoplay=1 frameborder=0 allow=autoplay;encrypted-media allowfullscreen></iframe>'">
+                            <img src="https://img.youtube.com/vi/FAUQV7l0jXM/maxresdefault.jpg" alt="Multilogin X Coupon Code Tutorial">
+                            <div class="play-btn"></div>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-400 mt-2 text-center">Multilogin X Antidetect Browser & Real Android Cloud Phone Unified Interface Showcase by Engineer K. Verified 50% OFF with Promo Code ADBNEW50.</div>
+                </div>
     <section id="faq" class="max-w-4xl mx-auto mb-12 px-4">
         <h2 class="text-2xl font-bold mb-4 text-green-400">🛡️ Technical FAQ: Multilogin X & Cloud Phone Infrastructure</h2>
         <div class="space-y-4">
