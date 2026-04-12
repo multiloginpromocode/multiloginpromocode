@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Anti-Detect Stack: Minimal, Maintainable, Testable — Playbook</title>
+  <meta name="description" content="A compact anti-detect stack playbook that emphasizes maintainability and proof-first decisions before applying discounts.">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="canonical" href="/drafts/rewrites/guides-sample.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Anti-Detect Stack — Minimal Playbook","dateModified":"2026-04-12"}</script>
+</head><body>
+  <main class="container">
+    <nav class="breadcrumb"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Stack Playbook</nav>
+    <header class="hero">
+      <h1>Build a Minimal Anti-Detect Stack That Survives Updates</h1>
+      <p class="lead">Skip the plugin-bundle temptation. Design layered controls and prove each layer with reproducible tests.</p>
+      <p class="meta">Updated: 2026-04-12</p>
+    </header>
+
+    <section>
+      <h2>Core Principles</h2>
+      <ul>
+        <li>Layered controls: orchestration, runtime, behavior, transport.</li>
+        <li>Proof-first: require 3 clean repeat sessions before rollout.</li>
+        <li>Minimal defaults: add flags and extensions only when tests require them.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Minimal Stack Template</h2>
+      <ol>
+        <li>Profile lifecycle via API (pin configs).</li>
+        <li>Behavioral glue (lightweight puppeteer/playwright wrappers).</li>
+        <li>Request-layer impersonation for non-JS endpoints.</li>
+        <li>Evidence collection and rollback playbook.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Quick Hardening Tips</h2>
+      <p>Prefer deterministic user data dirs, pin extension versions, and avoid aggressive launch-arg bundles that you cannot quickly validate.</p>
+    </section>
+
+    <footer>
+      <p>Use rewrite-guidelines.md to expand this into full guides with different intros and FAQs.</p>
+      <a href="/guides/">Back to Guides hub</a>
+    </footer>
+  </main>
+</body></html>
