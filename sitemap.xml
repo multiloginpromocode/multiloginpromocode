@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://multiloginpromocode.com/</loc>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+      <loc>https://multiloginpromocode.com/sitemap-compare.xml</loc>
       <lastmod>2026-04-12</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>https://multiloginpromocode.com/compare/</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://multiloginpromocode.com/sitemap-guides.xml</loc>
       <lastmod>2026-04-12</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-   <url>
-      <loc>https://multiloginpromocode.com/guides/</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://multiloginpromocode.com/sitemap-promo.xml</loc>
       <lastmod>2026-04-12</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-   <url>
-      <loc>https://multiloginpromocode.com/promo/</loc>
+   </sitemap>
+   <sitemap>
+      <loc>https://multiloginpromocode.com/sitemap-static.xml</loc>
       <lastmod>2026-04-12</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-</urlset>
+   </sitemap>
+</sitemapindex>
