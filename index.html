@@ -307,6 +307,20 @@
     </script>
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
+    <!-- BẬT maintenance: đổi false → true -->
+    <script>window.SITE_MAINTENANCE = false;</script>
+    <div id="maintenance-overlay" hidden style="position:fixed;inset:0;z-index:999999;background:#080808;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-family:system-ui,sans-serif">
+        <div>
+            <h1 style="font-size:1.75rem;margin:0 0 .5rem;font-weight:600">Website is currently unavailable</h1>
+            <p style="color:#999;margin:0">Please check back soon.</p>
+        </div>
+    </div>
+    <script>
+        if (window.SITE_MAINTENANCE) {
+            document.getElementById('maintenance-overlay').hidden = false;
+            document.body.style.overflow = 'hidden';
+        }
+    </script>
         <!-- Floating Promo Bar (scripted) -->
         <script>
             (function () {
