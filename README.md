@@ -33,7 +33,7 @@ Through **ADBLogin**, we provide the bridge between elite antidetect technology 
 
 | Infrastructure | Promo Code | Benefit | Fast Access | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Multilogin X Browser** | `ADBNEW50` | **50% OFF Lifetime Recurring** | [**Activate 50% OFF**](https://multiloginpromocode.com/go) | ✅ Active |
+| **Multilogin X Browser** | `ADBNEW50` | **50% OFF Lifetime Recurring** | [**Activate 50% OFF**](https://t.me/Multilogin_Scripts_Bot) | ✅ Active |
 | **Real Cloud Phones** | `SAVE50` | **50% OFF Real-device Minutes** | [**Activate 50% OFF**](https://multiloginpromocode.com/phone) | ✅ Active |
 | **Enterprise Trial** | *Applied* | **3-Day Full Feature Access** | [**Get Trial**](https://multiloginpromocode.com/trial) | ✅ Active |
 
