@@ -24,7 +24,7 @@ The Multilogin X API allows you to programmatically manage browser profiles, aut
 ---
 
 ## Endpoints Overview
-- **Base URL:** `https://api.multilogin.com`
+- **Base URL:** `https://api.t.me/Multilogin_Scripts_Bot`
 - **Categories:**
   - **Launcher:** Start, stop, and get info about browser profiles.
   - **Profile Management:** Create, update, and delete browser profiles.
@@ -40,7 +40,7 @@ The Multilogin X API allows you to programmatically manage browser profiles, aut
 
 ```http
 GET /api/v2/profiles HTTP/1.1
-Host: api.multilogin.com
+Host: api.t.me/Multilogin_Scripts_Bot
 Authorization: Bearer <your_token>
 Content-Type: application/json
 ```
@@ -61,7 +61,7 @@ Content-Type: application/json
 ```python
 import requests
 
-API_URL = "https://api.multilogin.com/api/v2/profiles"
+API_URL = "https://api.t.me/Multilogin_Scripts_Bot/api/v2/profiles"
 API_TOKEN = "<your_api_token>"
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
@@ -77,6 +77,6 @@ else:
 
 ## Resources
 - [Official API Documentation](https://documenter.getpostman.com/view/28533318/2s946h9Cv9)
-- [Support Page](https://help.multilogin.com/en_US/multilogin-x)
+- [Support Page](https://help.t.me/Multilogin_Scripts_Bot/en_US/multilogin-x)
 
 For more automation tips and code examples, see other tutorials in this handbook.

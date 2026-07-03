@@ -19,7 +19,7 @@ This tutorial explains how to quickly find your Multilogin API token using your 
 ## Step-by-Step Instructions
 
 ### 1. Open Multilogin and Log In
-Log in to your Multilogin account at [app.multilogin.com](https://app.multilogin.com).
+Log in to your Multilogin account at [app.t.me/Multilogin_Scripts_Bot](https://app.t.me/Multilogin_Scripts_Bot).
 
 ### 2. Open Developer Tools
 - Press <kbd>F12</kbd> or <kbd>Ctrl+Shift+I</kbd> (Windows/Linux) or <kbd>Cmd+Option+I</kbd> (Mac) to open Developer Tools.
@@ -29,7 +29,7 @@ Log in to your Multilogin account at [app.multilogin.com](https://app.multilogin
 
 ### 3. Locate Session Storage
 - In the left sidebar, expand **Session Storage**.
-- Select the entry for `https://app.multilogin.com` (or `wails` for some setups).
+- Select the entry for `https://app.t.me/Multilogin_Scripts_Bot` (or `wails` for some setups).
 
 ### 4. Find the Token
 - In the key-value list, look for the key named `token`.

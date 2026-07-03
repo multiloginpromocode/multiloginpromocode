@@ -19,7 +19,7 @@ This tutorial shows you how to find your profile, folder, and workspace IDs in M
 ## Step-by-Step Instructions
 
 ### 1. Get Workspace ID from the Account Page
-- Log in to your Multilogin account at [app.multilogin.com](https://app.multilogin.com).
+- Log in to your Multilogin account at [app.t.me/Multilogin_Scripts_Bot](https://app.t.me/Multilogin_Scripts_Bot).
 - Click the **Account** icon in the sidebar.
 - Your Workspace ID is displayed in the account details section.
 

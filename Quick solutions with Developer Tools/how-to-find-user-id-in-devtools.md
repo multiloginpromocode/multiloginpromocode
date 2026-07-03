@@ -19,7 +19,7 @@ This guide will show you how to quickly retrieve your Multilogin user ID using y
 ## Step-by-Step Instructions
 
 ### 1. Open Multilogin and Log In
-Log in to your Multilogin account at [app.multilogin.com](https://app.multilogin.com).
+Log in to your Multilogin account at [app.t.me/Multilogin_Scripts_Bot](https://app.t.me/Multilogin_Scripts_Bot).
 
 ### 2. Open Developer Tools
 - Press <kbd>F12</kbd> or <kbd>Ctrl+Shift+I</kbd> (Windows/Linux) or <kbd>Cmd+Option+I</kbd> (Mac) to open Developer Tools.
